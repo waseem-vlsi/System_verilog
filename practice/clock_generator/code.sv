@@ -7,7 +7,6 @@ module clk_gen (
   output  logic        clk_v2
 );
   logic q_out, d_in;
-
   always_ff@(posedge clk_in or posedge reset) begin 
     
     if(reset) begin 
