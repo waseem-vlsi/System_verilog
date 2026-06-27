@@ -8,6 +8,7 @@ module perf_counters #(
   output logic [CNT_W-1:0] p_count_o
 );
 
+  
   logic [CNT_W-1:0] nxt_count, count_q;
 
   always_ff @(posedge clk or posedge reset) begin
